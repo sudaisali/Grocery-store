@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Grocery project</string>
+    <string name="splashText">Grocery Store</string>
+</resources>
