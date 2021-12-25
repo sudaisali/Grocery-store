@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".UserActivity">
+
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="70dp"
@@ -13,36 +14,37 @@
         >
 
         <TextView
+            android:id="@+id/name"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="User"
-            android:id="@+id/name"
-            android:textColor="@color/white"
             android:layout_centerInParent="true"
+            android:text="User"
+            android:textColor="@color/white"
             android:textSize="30dp">
 
 
         </TextView>
+
         <ImageButton
+            android:id="@+id/power"
             android:layout_width="30dp"
             android:layout_height="30dp"
-            android:background="@color/colorprimary"
-            android:id="@+id/power"
-            android:src="@drawable/ic_power_white"
             android:layout_alignParentEnd="true"
             android:layout_centerInParent="true"
             android:layout_marginRight="20dp"
-            >
+            android:background="@color/colorprimary"
+            android:src="@drawable/ic_power_white">
 
 
         </ImageButton>
+
         <ImageButton
             android:id="@+id/edit"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@drawable/ic_edit_white"
-            android:background="@color/colorprimary"
+            android:layout_centerInParent="true"
             android:layout_toStartOf="@+id/power"
-            android:layout_centerInParent="true"/>
+            android:background="@color/colorprimary"
+            android:src="@drawable/ic_edit_white" />
     </RelativeLayout>
 </RelativeLayout>

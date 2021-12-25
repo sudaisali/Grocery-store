@@ -133,7 +133,7 @@ login.setOnClickListener(new View.OnClickListener() {
                     public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
                         for (DataSnapshot ds: dataSnapshot.getChildren()){
                            String accountType = ""+ds.child("accountType").getValue();
-                           if(accountType.equals("Seller")){
+                           if(accountType.equals("seller")){
                                progressDialog.dismiss();
                                startActivity(new Intent(LoginActivity.this,SellerActivity.class));
                            }

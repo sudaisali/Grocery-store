@@ -5,43 +5,86 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".SellerActivity">
+
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="70dp"
+        android:layout_height="100dp"
         android:background="@drawable/rectangle_shape01"
 
         >
 
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/profile"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+           android:layout_marginLeft="5dp"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="10dp"
+            android:src="@drawable/ic_store_gray"
+            app:civ_border_color="@color/white"
+            app:civ_border_overlay="true"
+            app:civ_circle_background_color="@color/white" />
+
         <TextView
+            android:id="@+id/name"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/profile"
+            android:layout_marginTop="20dp"
+
             android:text="Seller"
-            android:id="@+id/name"
             android:textColor="@color/white"
-            android:layout_centerInParent="true"
-            android:textSize="30dp">
+            android:textSize="18dp" />
 
+        <TextView
+            android:id="@+id/shopname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/name"
+            android:layout_toEndOf="@+id/profile"
+            android:text="Shop name"
+            android:textColor="@color/white"
+            android:textSize="18dp" />
 
-        </TextView>
+        <TextView
+            android:id="@+id/Email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/shopname"
+            android:layout_toEndOf="@id/profile"
+            android:text="Email"
+            android:textColor="@color/white"
+            android:textSize="18dp" />
+
 
         <ImageButton
+            android:id="@+id/power"
             android:layout_width="30dp"
             android:layout_height="30dp"
-            android:background="@color/colorprimary"
-            android:id="@+id/power"
-            android:src="@drawable/ic_power_white"
             android:layout_alignParentEnd="true"
-            android:layout_centerInParent="true">
+            android:layout_centerInParent="true"
+            android:background="@color/colorprimary"
+            android:src="@drawable/ic_power_white">
 
         </ImageButton>
+
         <ImageButton
             android:id="@+id/edit"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@drawable/ic_edit_white"
-            android:background="@color/colorprimary"
+            android:layout_centerInParent="true"
             android:layout_toStartOf="@+id/power"
-            android:layout_centerInParent="true"/>
+            android:background="@color/colorprimary"
+            android:src="@drawable/ic_edit_white" />
+
+        <ImageButton
+            android:id="@+id/addproduct"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_toStartOf="@+id/edit"
+            android:background="@color/colorprimary"
+            android:src="@drawable/ic_baseline_add_shopping_cart_24" />
     </RelativeLayout>
 
 

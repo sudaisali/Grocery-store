@@ -223,19 +223,21 @@
         android:padding="10dp"
         />
 
-    <Button
-        android:id="@+id/register"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/conpassword"
-        android:minWidth="120dp"
-        android:layout_centerHorizontal="true"
-        android:layout_margin="5dp"
-        android:text="Register"
-        android:textSize="18dp"
-        android:textStyle="bold"
-        android:backgroundTint="@color/colorprimary"
-        />
+            <Button
+                android:id="@+id/register"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/conpassword"
+                android:layout_centerHorizontal="true"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginBottom="5dp"
+                android:backgroundTint="@color/colorprimary"
+                android:minWidth="120dp"
+                android:text="Register"
+                android:textSize="18dp"
+                android:textStyle="bold" />
     <TextView
         android:id="@+id/registerseller"
         android:layout_width="wrap_content"

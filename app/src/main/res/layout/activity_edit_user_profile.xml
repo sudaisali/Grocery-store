@@ -6,6 +6,7 @@
     android:layout_height="match_parent"
     tools:context=".Edit_user_profile">
     <RelativeLayout
+        android:id="@+id/toolbar"
         android:layout_width="match_parent"
         android:layout_height="70dp"
         android:background="@drawable/rectangle_shape01"
@@ -13,45 +14,154 @@
         >
 
         <TextView
+            android:id="@+id/user"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="User"
-            android:id="@+id/name"
-            android:textColor="@color/white"
+            android:layout_centerHorizontal="true"
             android:layout_centerInParent="true"
+            android:text="User"
+            android:textColor="@color/white"
             android:textSize="30dp">
 
 
         </TextView>
+
         <ImageButton
+            android:id="@+id/gps"
             android:layout_width="30dp"
             android:layout_height="30dp"
-            android:background="@color/colorprimary"
-            android:id="@+id/power"
-            android:src="@drawable/ic_power_white"
             android:layout_alignParentEnd="true"
             android:layout_centerInParent="true"
             android:layout_marginRight="20dp"
-            >
+            android:background="@color/colorprimary"
+            android:src="@drawable/ic_gps_gray">
 
 
         </ImageButton>
+
         <ImageView
             android:id="@+id/back"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerVertical="true"
-            android:src="@drawable/ic_back_white"
-            android:layout_marginLeft="5dp"/>
+            android:layout_marginStart="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginBottom="5dp"
+            android:src="@drawable/ic_back_white" />
 
-        <ImageButton
-            android:id="@+id/edit"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_centerInParent="true"
-            android:layout_toStartOf="@+id/power"
-            android:background="@color/colorprimary"
-            android:src="@drawable/ic_edit_white" />
+
     </RelativeLayout>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/image"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:layout_below="@+id/toolbar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="2dp"
+        android:src="@drawable/ic_person_gray"
+        app:civ_border_color="@color/colorprimary"
+        app:civ_border_overlay="true"
+        app:civ_border_width="2dp" />
+
+    <EditText
+        android:id="@id/name"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/image"
+        android:padding="10dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/rectangle_shape02"
+        android:drawableStart="@drawable/ic_person_gray"
+        android:hint="Full name"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/phone"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/name"
+
+        android:padding="10dp"
+        android:background="@drawable/rectangle_shape02"
+        android:drawableStart="@drawable/ic_phone_gray"
+        android:hint="Phone number"
+        android:inputType="number" />
+
+    <LinearLayout
+        android:id="@+id/addresscity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/phone"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/country"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+         android:layout_margin="5dp"
+            android:padding="15dp"
+            android:layout_weight="1"
+            android:background="@drawable/rectangle_shape02"
+            android:drawableStart="@drawable/ic_location_gray"
+            android:hint="Country"
+            android:inputType="text"
+             />
+
+        <EditText
+            android:id="@+id/state"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_margin="5dp"
+            android:background="@drawable/rectangle_shape02"
+            android:drawableStart="@drawable/ic_location_gray"
+            android:hint="State"
+            android:layout_weight="1"
+            android:inputType="text"
+            android:drawablePadding="1dp"
+            android:padding="15dp"/>
+
+        <EditText
+            android:id="@+id/city"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:layout_margin="5dp"
+            android:background="@drawable/rectangle_shape02"
+            android:drawableStart="@drawable/ic_location_gray"
+            android:hint="City"
+                  android:inputType="text"
+             />
+
+
+
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/addresscity"
+        android:layout_marginStart="5dp"
+        android:background="@drawable/rectangle_shape02"
+        android:drawableStart="@drawable/ic_location_gray"
+        android:hint="Address"
+        android:inputType="textMultiLine"
+        android:padding="10dp" />
+    <Button
+        android:id="@+id/update"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/address"
+        android:layout_centerHorizontal="true"
+
+        android:backgroundTint="@color/colorprimary"
+        android:minWidth="120dp"
+        android:text="update"
+        android:textSize="18dp"
+        android:textStyle="bold" />
 
 </RelativeLayout>

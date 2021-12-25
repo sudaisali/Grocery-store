@@ -3,6 +3,9 @@
     package="com.example.groceryproject"
     android:installLocation="auto">
 
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
     <uses-permission android:name="android.permission.CAMERA" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.INTERNET" />
@@ -16,6 +19,9 @@
         android:roundIcon="@id/icon"
         android:supportsRtl="true"
         android:theme="@style/Theme.GroceryProject.NoActionBar">
+        <activity
+            android:name=".Addproduct"
+            android:exported="true" />
         <activity
             android:name=".Edit_seller_profile"
             android:exported="true" />
