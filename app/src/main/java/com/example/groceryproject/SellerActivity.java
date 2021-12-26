@@ -9,6 +9,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageButton;
 import android.widget.ImageView;
+import android.widget.RelativeLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -26,13 +27,14 @@ import com.squareup.picasso.Picasso;
 import java.util.HashMap;
 
 public class SellerActivity extends AppCompatActivity {
- private TextView name;
+ private TextView name , tabproductstv,tabordertv;
  private ImageButton power;
  private FirebaseAuth firebaseAuth;
  private ImageButton edit , addproduct;
  private ImageView profile;
  TextView shopname,email;
  private ProgressDialog progressDialog;
+ RelativeLayout productRL , orderRL;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -42,13 +44,20 @@ public class SellerActivity extends AppCompatActivity {
         power = findViewById(R.id.power);
         edit = findViewById(R.id.edit);
         shopname = findViewById(R.id.shopname);
+        addproduct = findViewById(R.id.addproduct);
         email = findViewById(R.id.Email);
         profile = findViewById(R.id.profile);
+        tabordertv=findViewById(R.id.tabOrderTv);
+        tabproductstv=findViewById(R.id.tabProductsTv);
+        productRL=findViewById(R.id.productRL);
+        orderRL=findViewById(R.id.orderRL);
         progressDialog = new ProgressDialog(this);
         progressDialog.setTitle("Please wait...");
         progressDialog.setCanceledOnTouchOutside(false);
         firebaseAuth = FirebaseAuth.getInstance();
         checkUser();
+        showproductui();
+
         power.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -62,6 +71,53 @@ public class SellerActivity extends AppCompatActivity {
                 startActivity(new Intent(SellerActivity.this , Edit_seller_profile.class));
             }
         });
+        addproduct.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(SellerActivity.this , Addproduct.class));
+            }
+        });
+        tabproductstv.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+              showproductui();
+            }
+        });
+        tabordertv.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+             showorderui();
+            }
+        });
+    }
+
+    private void showproductui() {
+        //show products and hide
+        productRL.setVisibility(View.VISIBLE);
+        orderRL.setVisibility(View.GONE);
+
+        tabproductstv.setTextColor(getResources().getColor(R.color.black));
+        tabproductstv.setBackgroundResource(R.drawable.shape_rectangle_04);
+
+        tabordertv.setTextColor(getResources().getColor(R.color.white));
+        tabordertv.setBackgroundColor(getResources().getColor(android.R.color.transparent));
+    }
+
+    private void showorderui() {
+        //show order and hide
+        orderRL.setVisibility(View.VISIBLE);
+        productRL.setVisibility(View.GONE);
+
+
+        tabproductstv.setTextColor(getResources().getColor(R.color.white));
+        tabproductstv.setBackgroundColor(getResources().getColor(android.R.color.transparent));
+
+
+        tabordertv.setTextColor(getResources().getColor(R.color.black));
+        tabordertv.setBackgroundResource(R.drawable.shape_rectangle_04);
+
+
+
     }
 
     private void makemeoffline() {

@@ -7,8 +7,9 @@
     tools:context=".SellerActivity">
 
     <RelativeLayout
+        android:id="@+id/toolbar"
         android:layout_width="match_parent"
-        android:layout_height="100dp"
+        android:layout_height="120dp"
         android:background="@drawable/rectangle_shape01"
 
         >
@@ -17,8 +18,8 @@
             android:id="@+id/profile"
             android:layout_width="70dp"
             android:layout_height="70dp"
-           android:layout_marginLeft="5dp"
-            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
             android:layout_marginEnd="10dp"
             android:src="@drawable/ic_store_gray"
             app:civ_border_color="@color/white"
@@ -29,8 +30,8 @@
             android:id="@+id/name"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
             android:layout_toEndOf="@id/profile"
-            android:layout_marginTop="20dp"
 
             android:text="Seller"
             android:textColor="@color/white"
@@ -62,7 +63,7 @@
             android:layout_width="30dp"
             android:layout_height="30dp"
             android:layout_alignParentEnd="true"
-            android:layout_centerInParent="true"
+            android:layout_marginTop="10dp"
             android:background="@color/colorprimary"
             android:src="@drawable/ic_power_white">
 
@@ -72,7 +73,8 @@
             android:id="@+id/edit"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_centerInParent="true"
+            android:layout_marginTop="10dp"
+
             android:layout_toStartOf="@+id/power"
             android:background="@color/colorprimary"
             android:src="@drawable/ic_edit_white" />
@@ -81,10 +83,62 @@
             android:id="@+id/addproduct"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_centerInParent="true"
+            android:layout_marginTop="10dp"
             android:layout_toStartOf="@+id/edit"
             android:background="@color/colorprimary"
             android:src="@drawable/ic_baseline_add_shopping_cart_24" />
+        <!-- tabs products and orders-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_below="@+id/profile"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/shape_rectangle_03"
+            android:orientation="horizontal">
+            <!--products-->
+            <TextView
+                android:id="@+id/tabProductsTv"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/shape_rectangle_04"
+                android:gravity="center"
+                android:text="Products"
+                android:textColor="@color/black" />
+
+
+            <!--order-->
+            <TextView
+                android:id="@+id/tabOrderTv"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="Order"
+                android:textColor="@color/white" />
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+    <!--product-->
+    <RelativeLayout
+        android:id="@+id/productRL"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/toolbar">
+
+
+    </RelativeLayout>
+    <!--Order-->
+    <RelativeLayout
+        android:id="@+id/orderRL"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/toolbar">
+
+
     </RelativeLayout>
 
 

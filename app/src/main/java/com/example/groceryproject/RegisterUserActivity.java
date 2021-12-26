@@ -526,7 +526,7 @@ public class RegisterUserActivity extends AppCompatActivity implements LocationL
 
     @Override
     protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
-        if(requestCode == RESULT_OK){
+
             if(requestCode == IMAGE_PICK_GALLERY_CODE){
                 //getpicked image
                 image_uri = data.getData();
@@ -537,7 +537,7 @@ public class RegisterUserActivity extends AppCompatActivity implements LocationL
                 //SET TO IMAGE VIEW
                 image.setImageURI(image_uri);
             }
-        }
+
         super.onActivityResult(requestCode, resultCode, data);
     }
 

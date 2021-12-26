@@ -486,7 +486,7 @@ public class Edit_user_profile extends AppCompatActivity implements LocationList
 
     @Override
     protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
-        if(requestCode == RESULT_OK){
+
             if(requestCode == IMAGE_PICK_GALLERY_CODE){
                 //getpicked image
                 image_uri = data.getData();
@@ -496,7 +496,7 @@ public class Edit_user_profile extends AppCompatActivity implements LocationList
             else if(requestCode == IMAGE_PICK_CAMERA_CODE){
                 //SET TO IMAGE VIEW
                 image.setImageURI(image_uri);
-            }
+
         }
         super.onActivityResult(requestCode, resultCode, data);
     }

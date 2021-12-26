@@ -6,11 +6,18 @@
         <entry key="..\:/Users/Sudais/AndroidStudioProjects/Groceryproject/app/src/main/res/drawable/black_square.xml" value="0.22552083333333334" />
         <entry key="..\:/Users/Sudais/AndroidStudioProjects/Groceryproject/app/src/main/res/drawable/circle_shape01.xml" value="0.22552083333333334" />
         <entry key="..\:/Users/Sudais/AndroidStudioProjects/Groceryproject/app/src/main/res/drawable/ic_baseline_add_shopping_cart_24.xml" value="0.1" />
+        <entry key="..\:/Users/Sudais/AndroidStudioProjects/Groceryproject/app/src/main/res/drawable/ic_cart.xml" value="0.22552083333333334" />
+        <entry key="..\:/Users/Sudais/AndroidStudioProjects/Groceryproject/app/src/main/res/drawable/ic_category.xml" value="0.22552083333333334" />
+        <entry key="..\:/Users/Sudais/AndroidStudioProjects/Groceryproject/app/src/main/res/drawable/ic_drowpdown.xml" value="0.22552083333333334" />
         <entry key="..\:/Users/Sudais/AndroidStudioProjects/Groceryproject/app/src/main/res/drawable/ic_email_gray.xml" value="0.1" />
         <entry key="..\:/Users/Sudais/AndroidStudioProjects/Groceryproject/app/src/main/res/drawable/ic_gps_gray.xml" value="0.17685185185185184" />
+        <entry key="..\:/Users/Sudais/AndroidStudioProjects/Groceryproject/app/src/main/res/drawable/ic_text.xml" value="0.22552083333333334" />
         <entry key="..\:/Users/Sudais/AndroidStudioProjects/Groceryproject/app/src/main/res/drawable/rectangle_shape01.xml" value="0.22552083333333334" />
         <entry key="..\:/Users/Sudais/AndroidStudioProjects/Groceryproject/app/src/main/res/drawable/rectangle_shape02.xml" value="0.1787037037037037" />
-        <entry key="..\:/Users/Sudais/AndroidStudioProjects/Groceryproject/app/src/main/res/layout/activity_addproduct.xml" value="0.209375" />
+        <entry key="..\:/Users/Sudais/AndroidStudioProjects/Groceryproject/app/src/main/res/drawable/shape_rectangle_03.xml" value="0.1" />
+        <entry key="..\:/Users/Sudais/AndroidStudioProjects/Groceryproject/app/src/main/res/drawable/shape_rectangle_04.xml" value="0.1" />
+        <entry key="..\:/Users/Sudais/AndroidStudioProjects/Groceryproject/app/src/main/res/drawable/shape_rectangle_05.xml" value="0.1" />
+        <entry key="..\:/Users/Sudais/AndroidStudioProjects/Groceryproject/app/src/main/res/layout/activity_addproduct.xml" value="0.1" />
         <entry key="..\:/Users/Sudais/AndroidStudioProjects/Groceryproject/app/src/main/res/layout/activity_edit_profile.xml" value="0.1953125" />
         <entry key="..\:/Users/Sudais/AndroidStudioProjects/Groceryproject/app/src/main/res/layout/activity_edit_seller_profile.xml" value="0.21" />
         <entry key="..\:/Users/Sudais/AndroidStudioProjects/Groceryproject/app/src/main/res/layout/activity_edit_user_profile.xml" value="0.1" />
@@ -19,9 +26,10 @@
         <entry key="..\:/Users/Sudais/AndroidStudioProjects/Groceryproject/app/src/main/res/layout/activity_main.xml" value="0.1953125" />
         <entry key="..\:/Users/Sudais/AndroidStudioProjects/Groceryproject/app/src/main/res/layout/activity_register_seller.xml" value="0.1902654867256637" />
         <entry key="..\:/Users/Sudais/AndroidStudioProjects/Groceryproject/app/src/main/res/layout/activity_register_user.xml" value="0.1" />
-        <entry key="..\:/Users/Sudais/AndroidStudioProjects/Groceryproject/app/src/main/res/layout/activity_seller.xml" value="0.1" />
+        <entry key="..\:/Users/Sudais/AndroidStudioProjects/Groceryproject/app/src/main/res/layout/activity_seller.xml" value="0.16292134831460675" />
         <entry key="..\:/Users/Sudais/AndroidStudioProjects/Groceryproject/app/src/main/res/layout/activity_splash.xml" value="0.17753623188405798" />
         <entry key="..\:/Users/Sudais/AndroidStudioProjects/Groceryproject/app/src/main/res/layout/activity_user.xml" value="0.209375" />
+        <entry key="..\:/Users/Sudais/AndroidStudioProjects/Groceryproject/app/src/main/res/layout/row_product_seller.xml" value="0.5" />
         <entry key="..\:/Users/Sudais/AndroidStudioProjects/Groceryproject/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.22552083333333334" />
       </map>
     </option>
