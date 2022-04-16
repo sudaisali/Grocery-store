@@ -14,22 +14,34 @@
         <entry key="..\:/Users/Sudais/AndroidStudioProjects/Groceryproject/app/src/main/res/drawable/ic_text.xml" value="0.22552083333333334" />
         <entry key="..\:/Users/Sudais/AndroidStudioProjects/Groceryproject/app/src/main/res/drawable/rectangle_shape01.xml" value="0.22552083333333334" />
         <entry key="..\:/Users/Sudais/AndroidStudioProjects/Groceryproject/app/src/main/res/drawable/rectangle_shape02.xml" value="0.1787037037037037" />
+        <entry key="..\:/Users/Sudais/AndroidStudioProjects/Groceryproject/app/src/main/res/drawable/shape_circle_03.xml" value="0.12407407407407407" />
+        <entry key="..\:/Users/Sudais/AndroidStudioProjects/Groceryproject/app/src/main/res/drawable/shape_rec_06.xml" value="0.1" />
         <entry key="..\:/Users/Sudais/AndroidStudioProjects/Groceryproject/app/src/main/res/drawable/shape_rectangle_03.xml" value="0.1" />
         <entry key="..\:/Users/Sudais/AndroidStudioProjects/Groceryproject/app/src/main/res/drawable/shape_rectangle_04.xml" value="0.1" />
         <entry key="..\:/Users/Sudais/AndroidStudioProjects/Groceryproject/app/src/main/res/drawable/shape_rectangle_05.xml" value="0.1" />
         <entry key="..\:/Users/Sudais/AndroidStudioProjects/Groceryproject/app/src/main/res/layout/activity_addproduct.xml" value="0.1" />
         <entry key="..\:/Users/Sudais/AndroidStudioProjects/Groceryproject/app/src/main/res/layout/activity_edit_profile.xml" value="0.1953125" />
         <entry key="..\:/Users/Sudais/AndroidStudioProjects/Groceryproject/app/src/main/res/layout/activity_edit_seller_profile.xml" value="0.21" />
-        <entry key="..\:/Users/Sudais/AndroidStudioProjects/Groceryproject/app/src/main/res/layout/activity_edit_user_profile.xml" value="0.1" />
-        <entry key="..\:/Users/Sudais/AndroidStudioProjects/Groceryproject/app/src/main/res/layout/activity_forgot_password.xml" value="0.1" />
+        <entry key="..\:/Users/Sudais/AndroidStudioProjects/Groceryproject/app/src/main/res/layout/activity_edit_user_profile.xml" value="0.25" />
+        <entry key="..\:/Users/Sudais/AndroidStudioProjects/Groceryproject/app/src/main/res/layout/activity_editproduct.xml" value="0.2046875" />
+        <entry key="..\:/Users/Sudais/AndroidStudioProjects/Groceryproject/app/src/main/res/layout/activity_forgot_password.xml" value="0.33" />
         <entry key="..\:/Users/Sudais/AndroidStudioProjects/Groceryproject/app/src/main/res/layout/activity_login.xml" value="0.1" />
         <entry key="..\:/Users/Sudais/AndroidStudioProjects/Groceryproject/app/src/main/res/layout/activity_main.xml" value="0.1953125" />
+        <entry key="..\:/Users/Sudais/AndroidStudioProjects/Groceryproject/app/src/main/res/layout/activity_order_detail_user.xml" value="0.209375" />
         <entry key="..\:/Users/Sudais/AndroidStudioProjects/Groceryproject/app/src/main/res/layout/activity_register_seller.xml" value="0.1902654867256637" />
         <entry key="..\:/Users/Sudais/AndroidStudioProjects/Groceryproject/app/src/main/res/layout/activity_register_user.xml" value="0.1" />
-        <entry key="..\:/Users/Sudais/AndroidStudioProjects/Groceryproject/app/src/main/res/layout/activity_seller.xml" value="0.16292134831460675" />
+        <entry key="..\:/Users/Sudais/AndroidStudioProjects/Groceryproject/app/src/main/res/layout/activity_seller.xml" value="0.25" />
+        <entry key="..\:/Users/Sudais/AndroidStudioProjects/Groceryproject/app/src/main/res/layout/activity_shop_detail.xml" value="0.25" />
         <entry key="..\:/Users/Sudais/AndroidStudioProjects/Groceryproject/app/src/main/res/layout/activity_splash.xml" value="0.17753623188405798" />
-        <entry key="..\:/Users/Sudais/AndroidStudioProjects/Groceryproject/app/src/main/res/layout/activity_user.xml" value="0.209375" />
-        <entry key="..\:/Users/Sudais/AndroidStudioProjects/Groceryproject/app/src/main/res/layout/row_product_seller.xml" value="0.5" />
+        <entry key="..\:/Users/Sudais/AndroidStudioProjects/Groceryproject/app/src/main/res/layout/activity_user.xml" value="0.33" />
+        <entry key="..\:/Users/Sudais/AndroidStudioProjects/Groceryproject/app/src/main/res/layout/bs_product_details_seller.xml" value="0.33" />
+        <entry key="..\:/Users/Sudais/AndroidStudioProjects/Groceryproject/app/src/main/res/layout/dialog_cart.xml" value="0.22" />
+        <entry key="..\:/Users/Sudais/AndroidStudioProjects/Groceryproject/app/src/main/res/layout/dialouge_quantity.xml" value="0.2" />
+        <entry key="..\:/Users/Sudais/AndroidStudioProjects/Groceryproject/app/src/main/res/layout/row_cart.xml" value="0.33" />
+        <entry key="..\:/Users/Sudais/AndroidStudioProjects/Groceryproject/app/src/main/res/layout/row_order_user.xml" value="0.1" />
+        <entry key="..\:/Users/Sudais/AndroidStudioProjects/Groceryproject/app/src/main/res/layout/row_product_seller.xml" value="0.1" />
+        <entry key="..\:/Users/Sudais/AndroidStudioProjects/Groceryproject/app/src/main/res/layout/row_product_shop.xml" value="0.6223479490806223" />
+        <entry key="..\:/Users/Sudais/AndroidStudioProjects/Groceryproject/app/src/main/res/layout/row_shop.xml" value="0.5" />
         <entry key="..\:/Users/Sudais/AndroidStudioProjects/Groceryproject/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.22552083333333334" />
       </map>
     </option>
