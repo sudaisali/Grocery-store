@@ -4,37 +4,67 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".UserActivity">
+    tools:context=".activites.UserActivity">
 
     <RelativeLayout
+        android:id="@+id/toolbar"
         android:layout_width="match_parent"
-        android:layout_height="70dp"
+        android:layout_height="120dp"
         android:background="@drawable/rectangle_shape01"
 
         >
 
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/profileIV"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:src="@drawable/ic_store_gray"
+            app:civ_border_color="@color/white"
+            app:civ_border_overlay="true"
+            app:civ_circle_background_color="@color/white" />
+
         <TextView
-            android:id="@+id/name"
+            android:id="@+id/nameTV"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_centerInParent="true"
+            android:layout_marginTop="5dp"
+            android:layout_toEndOf="@id/profileIV"
             android:text="User"
             android:textColor="@color/white"
-            android:textSize="30dp">
+            android:textSize="18dp" />
 
+        <TextView
+            android:id="@+id/EmailTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/nameTV"
+            android:layout_toEndOf="@+id/profileIV"
+            android:text="Email"
+            android:textColor="@color/white"
+            android:textSize="18dp" />
 
-        </TextView>
+        <TextView
+            android:id="@+id/PhoneTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/EmailTV"
+            android:layout_toEndOf="@id/profileIV"
+            android:text="Contact"
+            android:textColor="@color/white"
+            android:textSize="18dp" />
+
 
         <ImageButton
             android:id="@+id/power"
             android:layout_width="30dp"
             android:layout_height="30dp"
             android:layout_alignParentEnd="true"
-            android:layout_centerInParent="true"
-            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp"
             android:background="@color/colorprimary"
             android:src="@drawable/ic_power_white">
-
 
         </ImageButton>
 
@@ -42,9 +72,79 @@
             android:id="@+id/edit"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_centerInParent="true"
+            android:layout_marginTop="10dp"
             android:layout_toStartOf="@+id/power"
             android:background="@color/colorprimary"
             android:src="@drawable/ic_edit_white" />
+
+        <ImageButton
+            android:id="@+id/addproduct"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_toStartOf="@+id/edit"
+            android:background="@color/colorprimary"
+            android:src="@drawable/ic_baseline_add_shopping_cart_24" />
+        <!-- tabs products and orders-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_below="@+id/profileIV"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/shape_rectangle_03"
+            android:orientation="horizontal">
+            <!--Shop-->
+            <TextView
+                android:id="@+id/tabShopTV"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/shape_rectangle_04"
+                android:gravity="center"
+                android:text="Shops"
+                android:textColor="@color/black" />
+
+
+            <!--order-->
+            <TextView
+                android:id="@+id/tabOrderTV"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="Order"
+                android:textColor="@color/white" />
+
+        </LinearLayout>
+
+
     </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/shopRL"
+        android:layout_below="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/shopRV"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            tools:listitem="@layout/row_shop" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/orderRL"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbar" >
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/ordersRV"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:listitem="@layout/row_order_user" />
+    </RelativeLayout>
+
 </RelativeLayout>

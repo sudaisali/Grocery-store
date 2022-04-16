@@ -1,4 +1,4 @@
-package com.example.groceryproject;
+package com.example.groceryproject.activites;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -9,6 +9,7 @@ import android.os.Handler;
 import android.view.Window;
 import android.view.WindowManager;
 
+import com.example.groceryproject.R;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.database.DataSnapshot;
@@ -51,21 +52,19 @@ public class SplashScreen extends AppCompatActivity {
 
     private void checkUserType(){
         DatabaseReference ref = FirebaseDatabase.getInstance().getReference("Users");
-        ref.orderByChild("uid").equalTo(firebaseAuth.getUid())
+        ref.child(firebaseAuth.getUid())
                 .addListenerForSingleValueEvent(new ValueEventListener() {
                     @Override
                     public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
-                        for (DataSnapshot ds: dataSnapshot.getChildren()){
-                            String accountType = ""+ds.child("accountType").getValue();
-                            if(accountType.equals("seller")){
+                        String accountType = ""+dataSnapshot.child("accountType").getValue();
+                        if(accountType.equals("seller")){
 
-                                startActivity(new Intent(SplashScreen.this,SellerActivity.class));
-                            }
-                            else{
+                            startActivity(new Intent(SplashScreen.this,SellerActivity.class));
+                        }
+                        else{
 
-                                startActivity(new Intent(SplashScreen.this,UserActivity.class));
+                            startActivity(new Intent(SplashScreen.this,UserActivity.class));
 
-                            }
                         }
                     }
 

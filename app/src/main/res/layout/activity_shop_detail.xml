@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activites.ShopDetailActivity">
+    <RelativeLayout
+        android:id="@+id/shopRL"
+        android:layout_width="match_parent"
+        android:layout_height="180dp">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/shopIV"
+            android:scaleType="fitXY"
+            android:src="@color/colorprimary"/>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_marginTop="40dp" />
+
+        <RelativeLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/shopNameTV"
+                style="@style/TextAppearance.AppCompat.Title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="3dp"
+                android:text="ShopName"
+                android:textColor="@color/white" />
+
+            <TextView
+                android:id="@+id/phoneTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/shopNameTV"
+                android:layout_marginStart="3dp"
+                android:text="Phone"
+                android:textColor="@color/white" />
+
+            <TextView
+                android:id="@+id/emailTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/phoneTV"
+                android:layout_marginStart="3dp"
+                android:text="Email"
+                android:textColor="@color/white" />
+
+            <TextView
+                android:id="@+id/shopopenTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="3dp"
+                android:text="Shop Open"
+                android:textColor="@color/white" />
+
+
+            <TextView
+                android:id="@+id/deliveryfeeTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/shopopenTv"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="3dp"
+                android:text="Delivery Fee"
+                android:textColor="@color/white" />
+
+
+            <TextView
+                android:id="@+id/addressTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/emailTv"
+                android:layout_marginStart="3dp"
+                android:text="Address"
+                android:textColor="@color/white" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:id="@+id/callbtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:src="@drawable/ic_call" />
+
+                <ImageButton
+                    android:id="@+id/mapbtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:src="@drawable/ic_map" />
+            </LinearLayout>
+
+        </RelativeLayout>
+
+
+
+
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/toolbarRl"
+        android:background="@drawable/rectangle_shape01"
+        android:padding="10dp">
+
+        <ImageButton
+            android:id="@+id/shoppingcart"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentEnd="true"
+            android:background="@null"
+            android:src="@drawable/ic_baseline_shopping_cart_24" />
+        <ImageButton
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@null"
+            android:id="@+id/back"
+            android:src="@drawable/ic_back_white"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="Shop Details"
+            android:id="@+id/shopdetails"
+            android:textColor="@color/white"
+            android:textSize="20sp"/>
+        <TextView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:id="@+id/cartcount"
+            android:text="25"
+            android:textSize="8sp"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:background="@drawable/shape_circle_03"
+            android:layout_alignParentEnd="true"
+
+            />
+    </RelativeLayout>
+<!--Products-->
+    <RelativeLayout
+        android:id="@+id/productRl"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/shopRL">
+
+        <EditText
+            android:id="@+id/searchproductEt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:drawablePadding="10dp"
+           android:padding="10dp"
+            android:hint="search"
+            android:layout_toStartOf="@+id/filterBtn"
+            android:background="@drawable/rectangle_shape02" />
+
+
+        <ImageButton
+            android:id="@+id/filterBtn"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="5dp"
+            android:background="@null"
+            android:src="@drawable/ic_filter" />
+
+        <TextView
+            android:id="@+id/filterdproducttv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/searchproductEt"
+            android:layout_marginStart="5dp"
+            android:layout_marginBottom="5dp"
+            android:text="Showing All"
+            android:textColor="@color/black" />
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/RecyclerView"
+            android:layout_below="@id/filterdproducttv"
+            app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+            tools:listitem="@layout/row_product_seller"/>
+    </RelativeLayout>
+</RelativeLayout>

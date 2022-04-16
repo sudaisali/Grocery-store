@@ -1,4 +1,4 @@
-package com.example.groceryproject;
+package com.example.groceryproject.Model;
 
 public class ModelProducts {
    private  String  productId , productTitle , productDescription , productCategory , productQuantity , productIcon , originalPrice ,discountPrice

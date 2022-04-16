@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".SellerActivity">
+    tools:context=".activites.SellerActivity">
 
     <RelativeLayout
         android:id="@+id/toolbar"
@@ -129,6 +129,45 @@
         android:layout_height="match_parent"
         android:layout_below="@id/toolbar">
 
+        <EditText
+            android:id="@+id/search"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginTop="3dp"
+            android:drawableStart="@drawable/ic_search"
+            android:drawablePadding="10dp"
+            android:hint="Search"
+            android:inputType="text"
+            android:layout_toStartOf="@+id/filterproductbtn"
+            android:background="@drawable/rectangle_shape02" />
+        <ImageButton
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:id="@+id/filterproductbtn"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="1dp"
+            android:layout_marginBottom="5dp"
+            android:background="@null"
+            android:scaleType="fitXY"
+            android:src="@drawable/ic_filter"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/filterdproductTV"
+            android:layout_below="@+id/search"
+            android:text="Showing All"
+            android:layout_marginStart="5dp"
+            android:textColor="@color/black"/>
+        <!-- Recycler View -->
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/productRV"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/filterdproductTV"
+            tools:listitem="@layout/row_product_shop"
+
+
+            />
 
     </RelativeLayout>
     <!--Order-->

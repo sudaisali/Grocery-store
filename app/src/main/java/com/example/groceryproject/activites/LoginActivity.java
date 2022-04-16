@@ -1,4 +1,4 @@
-package com.example.groceryproject;
+package com.example.groceryproject.activites;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -14,6 +14,7 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.example.groceryproject.R;
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.firebase.auth.AuthResult;
@@ -58,7 +59,7 @@ login.setOnClickListener(new View.OnClickListener() {
         register.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(LoginActivity.this,RegisterUserActivity.class));
+                startActivity(new Intent(LoginActivity.this, RegisterUserActivity.class));
 
             }
         });
@@ -135,11 +136,11 @@ login.setOnClickListener(new View.OnClickListener() {
                            String accountType = ""+ds.child("accountType").getValue();
                            if(accountType.equals("seller")){
                                progressDialog.dismiss();
-                               startActivity(new Intent(LoginActivity.this,SellerActivity.class));
+                               startActivity(new Intent(LoginActivity.this, SellerActivity.class));
                            }
                            else{
                                progressDialog.dismiss();
-                               startActivity(new Intent(LoginActivity.this,UserActivity.class));
+                               startActivity(new Intent(LoginActivity.this, UserActivity.class));
 
                            }
                         }

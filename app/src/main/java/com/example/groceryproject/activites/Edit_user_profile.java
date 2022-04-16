@@ -1,4 +1,4 @@
-package com.example.groceryproject;
+package com.example.groceryproject.activites;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -28,6 +28,7 @@ import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.Toast;
 
+import com.example.groceryproject.R;
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.android.gms.tasks.Task;
@@ -240,7 +241,7 @@ public class Edit_user_profile extends AppCompatActivity implements LocationList
     private void checkuser() {
         FirebaseUser user = firebaseAuth.getCurrentUser();
         if(user == null){
-            startActivity(new Intent(getApplicationContext(),LoginActivity.class));
+            startActivity(new Intent(getApplicationContext(), LoginActivity.class));
             finish();
         }
         else{

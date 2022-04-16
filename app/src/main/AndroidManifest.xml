@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.groceryproject"
-    android:installLocation="auto">
+    android:installLocation="auto" >
 
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
@@ -18,37 +18,44 @@
         android:label="@string/app_name"
         android:roundIcon="@id/icon"
         android:supportsRtl="true"
-        android:theme="@style/Theme.GroceryProject.NoActionBar">
+        android:theme="@style/Theme.GroceryProject.NoActionBar" >
         <activity
-            android:name=".Addproduct"
+            android:name=".activites.ShopDetailActivity"
+            android:exported="false"
+            android:windowSoftInputMode="stateHidden"/>
+        <activity
+            android:name=".activites.EditproductActivity"
             android:exported="true" />
         <activity
-            android:name=".Edit_seller_profile"
+            android:name=".activites.Addproduct"
             android:exported="true" />
         <activity
-            android:name=".Edit_user_profile"
+            android:name=".activites.Edit_seller_profile"
             android:exported="true" />
         <activity
-            android:name=".UserActivity"
+            android:name=".activites.Edit_user_profile"
             android:exported="true" />
         <activity
-            android:name=".SellerActivity"
+            android:name=".activites.UserActivity"
             android:exported="true" />
         <activity
-            android:name=".ForgotPasswordActivity"
+            android:name=".activites.SellerActivity"
             android:exported="true" />
         <activity
-            android:name=".RegisterSellerActivity"
+            android:name=".activites.ForgotPasswordActivity"
             android:exported="true" />
         <activity
-            android:name=".RegisterUserActivity"
+            android:name=".activites.RegisterSellerActivity"
             android:exported="true" />
         <activity
-            android:name=".LoginActivity"
+            android:name=".activites.RegisterUserActivity"
             android:exported="true" />
         <activity
-            android:name=".SplashScreen"
-            android:exported="true">
+            android:name=".activites.LoginActivity"
+            android:exported="true" />
+        <activity
+            android:name=".activites.SplashScreen"
+            android:exported="true" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
