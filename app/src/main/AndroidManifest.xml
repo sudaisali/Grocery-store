@@ -20,7 +20,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.GroceryProject.NoActionBar">
         <activity
-            android:name=".OrderDetailUser"
+            android:name=".activites.OrderDetailUser"
             android:exported="false" />
         <activity
             android:name=".activites.ShopDetailActivity"

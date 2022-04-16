@@ -1,8 +1,10 @@
-package com.example.groceryproject;
+package com.example.groceryproject.activites;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+
+import com.example.groceryproject.R;
 
 public class OrderDetailUser extends AppCompatActivity {
 
